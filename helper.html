@@ -12,7 +12,7 @@ var html_section_ele = document.getElementById("bla");
 function weeks_between(d1, d2) { return Math.round((d1-d2)/(7*24*60*60*1000))}
 var today = new Date();
 var dayofweek = today.getDay() + 1;
-if(dayofweek == 2 && (weeks_between(today, new Date(2024,2,6)) % 2 == 0))
+if(dayofweek == 2 && (weeks_between(today, new Date(2024,2,6)) % 2 == 1))
 {
 	html_section_ele.innerHTML = "catering";
 }
