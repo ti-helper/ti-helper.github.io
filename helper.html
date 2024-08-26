@@ -1,0 +1,20 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+
+<div id="bla">ordinary</div>
+
+
+<script>
+  var updated = false;
+
+  var html_section_ele = document.getElementById("bla");
+  
+  function weeks_between(d1, d2) { return Math.round((d1-d2)/(7*24*60*60*1000))}
+  var today = new Date();
+  
+	if(dayofweek == 4 && (weeks_between(today, new Date(2024,2,6)) % 2 == 0))
+	{
+		html_section_ele.innerHTML = "catering";
+	}
+  
+</script></body></html>
